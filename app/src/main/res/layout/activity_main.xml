@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorHui"
+    android:orientation="vertical"
+    tools:context=".activitys.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"/>
+
+    <Button
+        android:id="@+id/qqlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"/>
+
+    <LinearLayout
+        android:id="@+id/common_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp">
+
+        <RadioGroup
+            android:id="@+id/radiogroup_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_tabbar_home"
+                android:button="@null"
+                android:checked="true"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_discover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_tabbar_discover"
+                android:button="@null"
+                android:checked="false"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_tabbar_me"
+                android:button="@null"
+                android:checked="false"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/xiantiao"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/common_linearlayout"
+        android:background="@color/colorXian"/>
+    <FrameLayout
+        android:id="@+id/common_framlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/xiantiao">
+
+    </FrameLayout>
+
+</RelativeLayout>
