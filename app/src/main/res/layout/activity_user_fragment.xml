@@ -71,11 +71,12 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/me_clicktwo"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:background="@color/colorWhite">
+        android:background="@drawable/selector_user_info">
         <View
             android:layout_width="match_parent"
             android:layout_height="1px"
@@ -94,6 +95,8 @@
             android:layout_width="match_parent"
             android:layout_height="1px"
             android:layout_below="@id/imageview_two"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:background="@color/colorXian"/>
 
         <TextView
@@ -114,5 +117,89 @@
             />
     </RelativeLayout>
 
+    <RelativeLayout
+        android:id="@+id/me_clickthree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@drawable/selector_user_info">
+
+
+        <ImageView
+            android:id="@+id/imageview_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_me_item_collection"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/imageview_three"
+            android:background="@color/colorXian"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的关注"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/imageview_three"
+            android:layout_alignBottom="@id/imageview_three"/>
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_user_home_next"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/me_clickfour"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_user_info"
+        android:clickable="true">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorXian"/>
+
+        <ImageView
+            android:id="@+id/imageview_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_me_item_message"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/imageview_four"
+            android:background="@color/colorXian"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的消息"
+            android:textColor="@color/colorBlack"
+            android:layout_toRightOf="@id/imageview_four"
+            android:layout_alignBottom="@id/imageview_four"/>
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/ic_user_home_next"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
 
 </LinearLayout>
