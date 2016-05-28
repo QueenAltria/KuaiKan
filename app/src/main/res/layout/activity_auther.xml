@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jiang.kuaikan.activitys.AutherActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_personal">
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_collection_pre_normal"/>
+        <com.meg7.widget.CircleImageView
+            android:layout_marginTop="40dp"
+            android:id="@+id/circleimage"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_v_account_avatar"
+            android:layout_alignBottom="@id/circleimage"
+            android:layout_toRightOf="@id/circleimage"
+            android:layout_alignLeft="@id/circleimage"
+            android:paddingLeft="-10dp"/>
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circleimage"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nickname"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="12dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/weibo_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_author_weibo"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/weibo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/weibo_image"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginLeft="20dp"
+            android:autoLink="web"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/xiantiao"
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="@color/colorHui"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TA的作品"/>
+        <ListView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

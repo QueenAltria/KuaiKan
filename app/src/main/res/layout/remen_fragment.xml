@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefreshlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.bigkoo.convenientbanner.ConvenientBanner
+                    android:id="@+id/convenientBanner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    app:canLoop="true"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人气飙升"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"/>
+                <GridView
+                    android:id="@+id/renqigrid"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3">
+                </GridView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新作出炉"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"/>
+
+                <ImageView
+                    android:id="@+id/xinzuo_one"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="150dp"/>
+                <ImageView
+                    android:id="@+id/xinzuo_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主编力推"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"/>
+                <com.jiang.kuaikan.views.CustomGridView
+                    android:id="@+id/lituigrid"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="官方活动"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"/>
+
+                <GridView
+                    android:id="@+id/huodonggrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:numColumns="2">
+                </GridView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/bg_bottom_send_comic_normal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每周排行榜"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15dp"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="2000dp"
+                        android:layout_height="300dp"
+                        android:orientation="horizontal">
+                        <com.jiang.kuaikan.views.CustomGridView
+                            android:id="@+id/meizhougrid"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="2000dp"
+                            android:layout_height="200dp"
+                            android:numColumns="7"
+                            >
+                        </com.jiang.kuaikan.views.CustomGridView>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

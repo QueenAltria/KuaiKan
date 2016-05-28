@@ -1,8 +1,11 @@
 package com.jiang.kuaikan.fragment;
 
-import android.app.Fragment;
+
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,6 +16,11 @@ import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.jiang.kuaikan.R;
+import com.jiang.kuaikan.common.JsoupImage;
+
+import org.xutils.common.util.LogUtil;
+
+import java.util.List;
 
 public class UserFragment extends Fragment implements View.OnClickListener{
     private RelativeLayout mRelativeLayout1;

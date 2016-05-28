@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jiang.kuaikan.activitys.HomeSearchActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="取消"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/edit_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/textview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/abc_ic_search_api_mtrl_alpha"
+            android:textSize="10dp"
+            android:textColor="@color/colorXian"
+            android:hint="搜索作品名、作者名"
+            android:background="@drawable/bg_comic_detail_comment_single"
+            android:layout_centerVertical="true"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:inputType="text"  />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_content_empty"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/txtwujieguo"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/colorXian"
+        android:text="无结果"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#fc3543</color>
+    <!--<color name="colorPrimary">#fc3543</color>-->
+    <color name="colorPrimary">#fffc4c</color>
     <color name="colorPrimaryDark">#e41c41</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorHui">#f1f1f1</color>
     <color name="colorXian">#707070</color>
+    <color name="colorQianXian">#ca868686</color>
+    <color name="colorAn">#69434343</color>
     <color name="colorBlack">#000000</color>
+    <color name="colorYellow">#ffeb13</color>
+    <color name="colorTouMing">#00ffeb13</color>
 </resources>

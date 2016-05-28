@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorXian"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorXian"/>
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="120dp"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imageview"
+        android:textColor="@android:color/holo_red_dark"/>
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/num"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="@color/colorBlack"
+      />
+
+    <TextView
+        android:id="@+id/text_auther"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_toRightOf="@id/imageview"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorXian"
+        android:layout_below="@id/text_title"
+        android:maxEms="8"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+</RelativeLayout>
